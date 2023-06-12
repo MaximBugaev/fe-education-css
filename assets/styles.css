@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #7a9acf;
+    font-family: Roboto, sans-serif;
+}
+
+.subscriptions {
+    width: 1395px;
+    margin: 0 auto;
+    padding: 31px;
+    box-sizing: border-box;
+    margin-top: 147px;
+    background-color: white;
+    border-radius: 0.9%;
+}
+
+.price-list h1 {
+    color: #2851c1;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 28px;
+    margin: 0;
+    margin-bottom: 28px;
+}
+
+.price-description {
+    color: #888d8e;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 25px;
+    line-height: 30px;
+}
+
+.price {
+    position: relative;
+    right: 4px;
+    color: #2851c1;
+    font-size: 47px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.price sup,
+.price sub {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.price sub {
+    position: relative;
+    bottom: 10px;
+    left: 5px;
+}
+
+.price-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-list-item {
+    width: 444px;
+}
+
+.price-list-card {
+    padding: 25px;
+    text-decoration: none;
+    border-radius: 0.9%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.price-list-card:hover {
+    background-color: #f7f5f7;
+}
+
+.price-list-item img {
+    order: -1;
+    margin-bottom: 60px;
+}
