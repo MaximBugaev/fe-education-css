@@ -12,7 +12,11 @@ body {
     box-sizing: border-box;
     margin-top: 147px;
     background-color: white;
-    border-radius: 0.9%;
+    border-radius: 5px;
+}
+
+.price-img {
+    width: 110px;
 }
 
 .price-list h1 {
@@ -32,7 +36,7 @@ body {
     line-height: 30px;
 }
 
-.price {
+.price-value {
     position: relative;
     right: 4px;
     color: #2851c1;
@@ -41,13 +45,13 @@ body {
     margin: 0;
 }
 
-.price sup,
-.price sub {
+.price-value sup,
+.price-value sub {
     font-size: 20px;
     font-weight: 400;
 }
 
-.price sub {
+.price-value sub {
     position: relative;
     bottom: 10px;
     left: 5px;
@@ -69,7 +73,7 @@ body {
 .price-list-card {
     padding: 25px;
     text-decoration: none;
-    border-radius: 0.9%;
+    border-radius: 5px;
     
     display: flex;
     flex-direction: column;
