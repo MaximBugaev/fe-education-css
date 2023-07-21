@@ -3,15 +3,20 @@
     --second-color: #c9c9c9
 }
 
+html {
+    min-height: 100%;
+}
+
 body {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
+    letter-spacing: 1px;
     color: var(--main-color);
 
     background-image: url(img/background.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 0 -120px;
+    background-size: cover;
+
 }
 
 main {
@@ -22,7 +27,7 @@ main {
     margin: 0 auto;
     margin-top: 135px;
     width: 450px;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 h1 {
@@ -39,15 +44,8 @@ h2 {
     margin-right: auto;
 }
 
-.payment-list-item:nth-child(2) h2 {
-    color: var(--main-color);
-}
-
-.point-list {
+.bullets-list {
     margin: 0 auto;
-    padding: 0;
-    list-style: none;
-
     display: flex;
     gap: 10px;
     order: -1;
@@ -55,14 +53,14 @@ h2 {
     margin-bottom: 25px;
 }
 
-.point {
+.bullets-list-item {
     width: 8px;
     height: 8px;
     border-radius: 50%;
     background-color: var(--second-color);
 }
 
-.point-list-item:first-child .point {
+.bullets-list-item_active {
     background-color: #666666;
 }
 
@@ -79,49 +77,81 @@ h2 {
     margin-right: 30px;
 }
 
-.payment-check {
-    margin-right: 20px;
-}
-
 .payment-list-item {
     display: flex;
     align-items: center;
     padding: 20px 0;
+    position: relative;
 
     border-top: 1px solid var(--second-color);
     border-bottom: 1px solid var(--second-color);
 }
 
+.payment-list-item_active h2{
+    color: var(--main-color);
+}
+
+.payment-list-item_active::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(img/check.svg);
+    position: absolute;
+    right: 20px;
+}
+
 .payment-list-item:hover {
+    cursor: pointer;
     background-color: #f1f1f1;
+    transition: background-color 0.2s;
 }
 
 .payment-list-item:nth-child(2) {
     border: none;
 }
 
-.payment-button {
-    width: 100%;
-    background-color: #4696ff;
-    border: none;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-
-    font-family: inherit;
-    text-transform: inherit;
+.payment-list-item:nth-child(3){
+    border-bottom: none;
 }
 
-.payment-button:active {
-    background-color: #469dff;
-    margin-top: 3px;
+
+.payment-button:hover {
+    cursor: pointer;
+}
+
+.payment-button {
+    text-decoration: none;
+
+    background-color: #598bdd;
+    border-bottom: 1px #598bdd solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .payment-button-container {
     display: flex;
+    gap: 5px;
     justify-content: center;
+    padding: 20px 0;
+
+    background-color: #598bdd;
+    border-bottom: 1px #598bdd solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.payment-button-container:active {
+    background-color: #598bdd;
+    margin-top: 1px;
+    border-bottom: none;
 }
 
 .payment-button-title {
     font-size: 18px;
-    color: white;
+    color: #ffffff;
+}
+
+.payment-button-arrow {
+    width: 20px;
+    height: auto;
 }

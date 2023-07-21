@@ -6,42 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Loop 1 - Step 2</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
   <main>
     <h1>Payment method</h1>
-    <ul class="point-list">
-      <li class="point-list-item">
-        <div class="point"></div>
-      </li>
-      <li class="point-list-item">
-        <div class="point"></div>
-      </li>
-      <li class="point-list-item">
-        <div class="point"></div>
-      </li>
-    </ul>
+    <div class="bullets-list">
+        <div class="bullets-list-item bullets-list-item_active"></div>
+        <div class="bullets-list-item"></div>
+        <div class="bullets-list-item"></div> 
+    </div>
     <ul class="payment-list">
       <li class="payment-list-item">
         <h2>Visa</h2>
         <img src="img/visa.svg" alt="Логотип визы" class="payment-logo">
       </li>
-      <li class="payment-list-item">
+      <li class="payment-list-item payment-list-item_active">
         <h2>Mastercard</h2>
         <img src="img/mastercard.svg" alt="Логотип мастеркарда" class="payment-logo">
-        <img src="img/check.svg" alt="Галочка" class="payment-check">
       </li>
       <li class="payment-list-item">
         <h2>Maestro</h2>
         <img src="img/maestro.svg" alt="Логотип маестро" class="payment-logo">
       </li>
-      <button type="button" class="payment-button">
+      <a href="#" class="payment-button">
         <div class="payment-button-container">
-          <p class="payment-button-title">Next step</p>
-          <img src="img/arrow.svg" alt="Стрелка">
+          <span class="payment-button-title">Next step</span>
+          <img src="img/arrow.svg" alt="Стрелка" class="payment-button-arrow">
         </div>
-      </button>
+      </a>
     </ul>
   </main>
 </body>
