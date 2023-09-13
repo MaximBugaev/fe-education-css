@@ -1,3 +1,7 @@
+:root {
+    --price-list-color: #878888;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #000000;
@@ -38,7 +42,7 @@ main {
     justify-content: center;
     width: 60px;
     height: 60px;
-    border: 1px solid #878888;
+    border: 1px solid var(--price-list-color);
     border-radius: 50%;
 }
 
@@ -75,7 +79,7 @@ main {
 .price-list-item__description {
     margin: 0;
     font-size: 24px;
-    color: #878888;
+    color: var(--price-list-color);
     margin-bottom: 40px;
 }
 
