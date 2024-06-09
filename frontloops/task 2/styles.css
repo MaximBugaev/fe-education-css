@@ -1,6 +1,7 @@
 :root {
     --main-color: #000000;
-    --second-color: #c9c9c9
+    --second-color: #c9c9c9;
+    --third-color: #598bdd;
 }
 
 html {
@@ -23,9 +24,7 @@ main {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-
-    margin: 0 auto;
-    margin-top: 135px;
+    margin: 135px auto 0;
     width: 450px;
     background-color: #ffffff;
 }
@@ -38,6 +37,16 @@ h1 {
 }
 
 h2 {
+    margin-left: auto;
+    font-size: 19px;
+    color: var(--second-color);
+}
+
+.bullets-list {
+    margin: 27px auto 25px;
+    display: flex;
+    gap: 10px;
+    order: -1;
     margin: 0;
     font-size: 19px;
     color: var(--second-color);
@@ -82,12 +91,11 @@ h2 {
     align-items: center;
     padding: 20px 0;
     position: relative;
-
     border-top: 1px solid var(--second-color);
     border-bottom: 1px solid var(--second-color);
 }
 
-.payment-list-item_active h2{
+.payment-list-item_active h2 {
     color: var(--main-color);
 }
 
@@ -114,16 +122,14 @@ h2 {
     border-bottom: none;
 }
 
-
 .payment-button:hover {
     cursor: pointer;
 }
 
 .payment-button {
     text-decoration: none;
-
-    background-color: #598bdd;
-    border-bottom: 1px #598bdd solid;
+    background-color: var(--third-color);
+    border-bottom: 1px var(--third-color) solid;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -134,14 +140,15 @@ h2 {
     justify-content: center;
     padding: 20px 0;
 
-    background-color: #598bdd;
-    border-bottom: 1px #598bdd solid;
+    background-color: var(--third-color);
+    border-bottom: 1px var(--third-color) solid;
+
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
 .payment-button-container:active {
-    background-color: #598bdd;
+    background-color: var(--third-color);
     margin-top: 1px;
     border-bottom: none;
 }
