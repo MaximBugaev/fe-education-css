@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 4</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="messenger">
+    <header>
+      <div class="header__inner">
+        <h1 class="header__title--uppercase">Mark Zuckerber</h1>
+        <div class="header__bullet"></div>
+      </div>
+      <img src="img/close.svg" alt="крест" class="header__cross">
+    </header>
+    <main>
+      <div class="date">
+        <div class="date__line"></div>
+        <p class="date__day">Today</p>
+        <div class="date__line"></div>
+      </div>
+      <div class="messages">
+        <ul class="messages__list">
+          <li class="messages__item messages__item--start">
+            <time class='messages__time' datetime="10:53">10:53</time>
+            <div class="message-box">
+              <p class="message-box__content">
+                Hi, Mark! I made a new design for Messenger App.
+              </p>
+            </div>
+          </li>
+          <li class="messages__item messages__item--end">
+            <time class='messages__time' datetime="10:57">10:57</time>
+            <div class="message-box">
+              <p class="message-box__content">
+                Yo! Send it to my assistant and we'll review it during the year.
+              </p>  
+            </div>
+          </li>
+          <li class="messages__item messages__item--start">
+            <time class='messages__time' datetime="11:03">11:03</time>
+            <div class="message-box">
+              <p class="message-box__content">
+                But Mark...
+              </p>
+            </div>
+          </li>
+          <li class="messages__item messages__item--end messages__item--red">
+            <div class="message-box">
+              <p class="message-box__content">
+                You were blocked by the user.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="new-message">
+        <input type="text" class="new-message__input--no-border" placeholder="Enter the message">
+        <button class="new-message__send-button">Send</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
