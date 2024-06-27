@@ -81,10 +81,6 @@ main {
 }
 
 .messages__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid var(--third-color);
@@ -98,11 +94,6 @@ main {
 .messages__time {
     display: block;
     color: #AAAAAA;
-}
-
-.message-box__content {
-    padding: 0;
-    margin: 0;
 }
 
 .message-box {
@@ -137,7 +128,6 @@ main {
 
 .new-message__input--no-border,
 .new-message__input--no-border:focus {
-    outline: 0;
     border: 0;
 }
 
