@@ -15,6 +15,7 @@ body {
 .travel-guide {
     width: 100vw;
     height: 100vh;
+    overflow-y: hidden;
     background-image: url(../img/background.jpg);
     background-repeat:  no-repeat;
     background-size: 175%;
@@ -40,7 +41,7 @@ body {
     display: none;
 }
 
-.languages-list {
+.countries-list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -50,7 +51,7 @@ body {
     line-height: 24px;
 }
 
-.languages-list__change-btn {
+.countries-list__change-btn {
     border: 0;
     background: 0;
     color: inherit;
@@ -58,27 +59,31 @@ body {
     font-weight: inherit;
 }
 
-.languages-list--open {
+.countries-list--open {
     display: block;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     overflow-y: auto;
-    z-index: 49;
+    z-index: 3;
     background-color: var(--white-color);
 }
 
-.languages-list--open .languages-list-item {
+.countries-list--open .countries-list__item {
     position: relative;
     padding: 10px 25px 10px 15px;
 }
 
-.languages-list--open .languages-list-item:last-child {
-    padding-bottom: 24px;
+.countries-list--open .countries-list__item:last-child {
+    padding-bottom: 20px;
 }
 
-.languages-list--open .languages-list-item:not(:last-child)::after {
+.countries-list__item:hover {
+    cursor: pointer;
+}
+
+.countries-list--open .countries-list__item:not(:last-child)::after {
     content: "";
     width: 93%;
     height: 1px;
@@ -98,7 +103,7 @@ body {
     right: 0;
     bottom: 0;
     background-color: #00000062;
-    z-index: 10;
+    z-index: 2;
 }
 
 .nav {
@@ -106,27 +111,27 @@ body {
     justify-content: space-between;
 }
 
-.languages-btn {
+.countries-btn {
     display: flex;
     align-items: center;
 
     border: none;
     background-color: #00000000;
     position: relative;
-    z-index: 50;
+    z-index: 4;
     width: 19px;
     height: 16px;
 }
 
-.languages-btn__burger-btn {
+.countries-btn__burger-btn {
     height: 2px;
     width: 100%;
     transform: scale(1);
     background-color: var(--black-color);
 }
 
-.languages-btn::after,
-.languages-btn::before {
+.countries-btn::after,
+.countries-btn::before {
     content: "";
     position: absolute;
     background-color: var(--black-color);
@@ -134,35 +139,35 @@ body {
     height: 2px;
 }
 
-.languages-btn::before {
+.countries-btn::before {
     top: 0;
 }
 
-.languages-btn::after {
+.countries-btn::after {
     bottom: 0;
 }
 
-.languages-btn--active .languages-btn__burger-btn {
+.countries-btn--active .countries-btn__burger-btn {
     transform: scale(0);
 }
 
-.languages-btn--active::before {
+.countries-btn--active::before {
     top: 50%;
     transform: rotate(-45deg) translate(0, -50%);
 }
 
-.languages-btn--active::after {
+.countries-btn--active::after {
     bottom: 50%;
     transform: rotate(45deg) translate(0, 50%);
 }
 
-.title-container__title,
-.title-container__title-description {
+.main-header__title,
+.main-header__title-description {
     font-family: "Playfair Display", serif;
     padding: 0 15px;
 }
 
-.title-container__title {
+.main-header__title {
     width: 75%;
     font-size: 40px;
     font-weight: 400;
@@ -170,12 +175,12 @@ body {
     margin-bottom: 20px;
 }
 
-.title-container__title-description {
+.main-header__title-description {
     font-size: 1.143em;
     margin-bottom: 30px;
 }
 
-.title-container__author {
+.main-header__author {
     font-weight: 600;
 }
 
@@ -195,32 +200,27 @@ body {
     margin-bottom: 15px;
 }
 
-.promo-video-container::before {
-    content: '';
+/* video button */
+
+.promo-video-container__play-btn {
+    border: none;
+    position: absolute;
     width: 40px;
     height: 40px;
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--white-color);
+    background-image: url(../img/play.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 50%;
     opacity: 70%;
     z-index: 1;
 }
 
-.promo-video-container::after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-image: url(../img/play.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+.promo-video-container__play-btn:hover {
+    cursor: pointer;
 }
 
 .images-link {
@@ -298,7 +298,7 @@ body {
         color: inherit;
     }
 
-    .languages-list {
+    .countries-list {
         display: flex;
         color: #999999;
         gap: 35px;
@@ -306,7 +306,7 @@ body {
         font-weight: 700;
     }
 
-    .languages-list__change-btn:hover,
+    .countries-list__change-btn:hover,
     .back-link:hover {
         color: var(--black-color);
         fill: var(--black-color);
@@ -314,11 +314,11 @@ body {
         transition: 0.2s;
     }
 
-    .languages-list__change-btn .languages-list__language--bold {
+    .countries-list__change-btn .countries-list__language--bold {
         color: var(--black-color);
     }
 
-    .languages-btn {
+    .countries-btn {
         display: none;
     }
 
@@ -327,9 +327,9 @@ body {
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-    }
+        }
 
-    .title-container__title {
+    .main-header__title {
         width: 100%;
         position: relative;
         font-size: 4.3em;
@@ -338,7 +338,7 @@ body {
         margin-bottom: 3vh;
     }
 
-    .title-container__title::after {
+    .main-header__title::after {
         content: '';
         position: absolute;
         bottom: 21%;
@@ -348,13 +348,13 @@ body {
         background-color: var(--black-color);
     }
 
-    .title-container__title-description {
+    .main-header__title-description {
         font-size: 1.3em;
         margin-bottom: 4.5vh;
     }
 
-    .title-container__title,
-    .title-container__title-description {
+    .main-header__title,
+    .main-header__title-description {
         padding: 0;
     }
 
@@ -404,7 +404,7 @@ body {
 }
 
 @media (min-width: 992px) {
-    aside {
+    .promo-img {
         width: 36%;
         background-image: url(../img/background.jpg);
         background-repeat: no-repeat;

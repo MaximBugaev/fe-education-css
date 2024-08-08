@@ -11,7 +11,7 @@
 </head>
 <body>
   <div class="travel-guide">
-    <aside class="aside"></aside>
+    <aside class="promo-img"></aside>
     <header class="header">
       <nav class="nav">
         <a href="#" class="back-link">
@@ -21,37 +21,38 @@
           </svg>
           <span class="back-link__back-caption">BACK</span>
         </a>
-        <button class="languages-btn">
-          <span class="languages-btn__burger-btn"></span>
+        <button class="countries-btn">
+          <span class="countries-btn__burger-btn"></span>
         </button>
-          <ul class="languages-list">
-            <li class="languages-list-item">
-              <button class="languages-list__change-btn">
-                <span class="languages-list__language">NETHERLANDS</span>
-              </button>
-            </li>
-            <li class="languages-list-item">
-              <button class="languages-list__change-btn languages-list__change-btn--active">
-                <span class="languages-list__language languages-list__language--bold">SPAIN</span>
-              </button>
-            </li>
-            <li class="languages-list-item">
-              <button class="languages-list__change-btn">
-                <span class="languages-list__language">FRANCE</span>
-              </button>
-            </li>
-          </ul>
+        <ul class="countries-list">
+          <li class="countries-list__item">
+            <button class="countries-list__change-btn"> <!--countries-list__item__change-btn-->
+              <span class="countries-list__language">NETHERLANDS</span>
+            </button>
+          </li>
+          <li class="countries-list__item">
+            <button class="countries-list__change-btn countries-list__change-btn--active">
+              <span class="countries-list__language countries-list__language--bold">SPAIN</span>
+            </button>
+          </li>
+          <li class="countries-list__item">
+            <button class="countries-list__change-btn">
+              <span class="countries-list__language">FRANCE</span>
+            </button>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main">
-      <div class="title-container">
-        <h1 class="title-container__title">Visiting the pastelle city</h1>
-        <p class="title-container__title-description">By <span class="title-container__author">Jerry Henderson</span>, in Tourism</p>
-      </div>
+      <header class="main-header">
+        <h1 class="main-header__title">Visiting the pastelle city</h1>
+        <p class="main-header__title-description">By <span class="main-header__author">Jerry Henderson</span>, in Tourism</p>
+      </header>
       <div class="content-container">
         <div class="promo-content">
-          <div class="promo-video-container">
+          <div class="promo-video-container">  
             <video src="#" poster="img/preview.jpg" class="promo-video-container__video"></video>
+            <button class="promo-video-container__play-btn"></button>
           </div>
           <a href="#" class="images-link">
             <span class="images-link__link-caption">VIEW ALL PHOTOS</span>

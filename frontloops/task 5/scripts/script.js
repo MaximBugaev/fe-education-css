@@ -1,9 +1,9 @@
-let burgerBtn = document.querySelector('.languages-btn');
-let languagesList = document.querySelector('.languages-list');
+let burgerBtn = document.querySelector('.countries-btn');
+let countriesList = document.querySelector('.countries-list');
 let mainPage = document.querySelector('.travel-guide');
 
 burgerBtn.onclick = function() {
-    burgerBtn.classList.toggle('languages-btn--active');
-    languagesList.classList.toggle('languages-list--open');
+    burgerBtn.classList.toggle('countries-btn--active');
+    countriesList.classList.toggle('countries-list--open');
     mainPage.classList.toggle('travel-guide--overlay');
 }
