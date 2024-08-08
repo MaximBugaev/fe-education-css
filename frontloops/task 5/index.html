@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 8</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="travel-guide">
+    <aside class="promo-img"></aside>
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="back-link">
+          <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" class="back-link__back-img">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+          </svg>
+          <span class="back-link__back-caption">BACK</span>
+        </a>
+        <button class="countries-btn">
+          <span class="countries-btn__burger-btn"></span>
+        </button>
+        <ul class="countries-list">
+          <li class="countries-list__item">
+            <button class="countries-list__change-btn"> <!--countries-list__item__change-btn-->
+              <span class="countries-list__language">NETHERLANDS</span>
+            </button>
+          </li>
+          <li class="countries-list__item">
+            <button class="countries-list__change-btn countries-list__change-btn--active">
+              <span class="countries-list__language countries-list__language--bold">SPAIN</span>
+            </button>
+          </li>
+          <li class="countries-list__item">
+            <button class="countries-list__change-btn">
+              <span class="countries-list__language">FRANCE</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <header class="main-header">
+        <h1 class="main-header__title">Visiting the pastelle city</h1>
+        <p class="main-header__title-description">By <span class="main-header__author">Jerry Henderson</span>, in Tourism</p>
+      </header>
+      <div class="content-container">
+        <div class="promo-content">
+          <div class="promo-video-container">  
+            <video src="#" poster="img/preview.jpg" class="promo-video-container__video"></video>
+            <button class="promo-video-container__play-btn"></button>
+          </div>
+          <a href="#" class="images-link">
+            <span class="images-link__link-caption">VIEW ALL PHOTOS</span>
+            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" class="images-link__link-arrow-img">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+            </svg>
+          </a>
+        </div>
+        <section class="description-container">
+          <p class="description-container__description">As you drive into the town from Alicante airport you will pass between two salt lakes – one is blue/green and the other is an impressive pink colour.</p>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
