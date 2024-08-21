@@ -1,0 +1,326 @@
+:root {
+    --font-family: "Roboto", sans-serif;
+
+    --white-color: #ffffff;
+    --dark-grey-color: #727272;
+    --light-grey-color: #dedede;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 1em;
+    font-weight: 400;
+    color: #000000;
+    background-color: #f7cd76;
+}
+
+.page {
+    max-width: 300px;
+    margin: 30px auto;
+    background-color: var(--white-color);
+}
+
+.wallets {
+    padding: 30px 20px;
+    background-color: #f2f2f2;
+}
+
+.wallets-title-header,
+.finance-header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wallets-title-header__title {
+    margin: 0;
+    font-size: 1.12em;
+    font-weight: 400;
+}
+
+.wallets-title-header__add-btn {
+    border: 0;
+    background: 0;
+    width: 21px;
+    height: 21px;
+    background-image: url(../img/plus.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wallets-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wallets-list__item {
+    background-color: var(--white-color);
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.wallets-list__item:last-of-type {
+    margin-bottom: 0;
+}
+
+.wallets-list__btn {
+    width: 100%;
+    height: 100%;
+    padding: 9.5px 10px;
+    border: 0;
+    outline: 1px solid var(--light-grey-color);
+    border-radius: 4px;
+    background-color: var(--white-color);
+    text-align: left;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.wallets-list__btn:active {
+    outline: 2px solid #8793c6;
+}
+
+.wallet-info {
+    color: var(--dark-grey-color);
+}
+
+.wallet-info__number {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.wallet-info__date {
+    font-size: 0.75em;
+    font-weight: 300;
+}
+
+.wallet-info__img {
+    width: 62px;
+    height: 39px;
+}
+
+.finance {
+    padding: 30px 20px;
+}
+
+.finance-header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--light-grey-color);
+    margin-bottom: 20px;
+}
+
+.finance-header__title {
+    margin: 0;
+    font-size: 1.12em;
+    font-weight: 400;
+}
+
+.finance-header__balance {
+    font-weight: 700;
+    font-size: 1.12em;
+}
+
+.finance-header__balance--superscript,
+.transactions-list__change--superscript {
+    vertical-align: baseline; 
+    position: relative; 
+    top: -0.4em;
+}
+
+.transactions-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.transactions-list__item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.transactions-list__item:last-of-type {
+    margin-bottom: 0;
+}
+
+.transaction-icon-container {
+    width: 21px;
+    height: 21px;
+    border: 1px solid #dedede;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: relative;
+    margin-right: 10px;
+}
+
+.transaction-icon-container__payment-icon {
+    width: 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.transaction-description {
+    margin-right: auto;
+    width: 149px;
+}
+
+.transaction-description__title {
+    font-size: 0.88em;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.transaction-description__description {
+    font-size: 0.75em;
+    color: #b4b4b4;
+    margin: 0;
+}
+
+.transactions-list__change--loss {
+    color: #8897c6;
+    font-weight: 700;
+    font-size: 0.88em;
+}
+
+.transactions-list__change--profit {
+    color: #8bcd5e;
+    font-weight: 700;
+    font-size: 0.88em;
+}
+
+@media (min-width: 576px) {
+    .page {
+        display: flex;
+        min-width: 300px;
+        max-width: 820px;
+        max-height: 450px;
+        -webkit-box-shadow: 0px 6px 20px 6px rgba(34, 60, 80, 0.26);
+        -moz-box-shadow: 0px 6px 20px 6px rgba(34, 60, 80, 0.26);
+        box-shadow: 0px 6px 20px 6px rgba(34, 60, 80, 0.26);
+    }
+
+    .wallets {
+        padding: 40px 55px 5px 40px;
+        width: 39%;
+    }
+
+    .finance {
+        flex-grow: 1;
+        padding: 40px 55px 45px 40px;
+    }
+
+    .finance,
+    .wallets {
+        overflow: auto;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .finance::-webkit-scrollbar,
+    .wallets::-webkit-scrollbar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 7px;
+        background-color: none;
+    }
+
+    .finance::-webkit-scrollbar-thumb,
+    .wallets::-webkit-scrollbar-thumb {
+        background-color: #706e70;
+        border-radius: 15px;
+    }
+
+    .wallets-title-header {
+        margin-bottom: 40px;
+    }
+
+    .wallets-title-header__title {
+        font-size: 1.25em;
+    }
+
+    .wallets-title-header__add-btn {
+        width: 24px;
+        height: 24px;
+    }
+
+    .wallets-list__item {
+        margin-bottom: 30px;
+    }
+
+    .wallets-list__item:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .wallets-list__btn {
+        flex-direction: column-reverse;
+    }
+
+    .wallets-list__btn--active {
+        outline: 2px solid #8793c6;
+    }
+
+    .wallets-list__btn:hover {
+        outline: 2px solid #8793c6;
+        transition: 0.1s;
+        cursor: pointer;
+    }
+
+    .wallet-info__date {
+        font-size: 0.81em;
+    }
+
+    .wallet-info__img {
+        margin-bottom: 10px;
+        width: 60px;
+        height: 38px;
+    }
+
+    .finance-header {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+
+    .finance-header__title {
+        font-size: 1.25em;
+    }
+
+    .finance-header__balance {
+        font-size: 1.5em;
+    }
+
+    .transaction-description__title {
+        font-size: 1.12em;
+    }
+
+    .transaction-description__description {
+        font-size: 0.81em;
+    }
+
+    .transactions-list__change--loss,
+    .transactions-list__change--profit {
+        font-size: 1em;
+    }
+
+    .transactions-list__item {
+        margin-bottom: 40px;
+    }
+
+    .transactions-list__item:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .transaction-icon-container {
+        margin-right: 30px;
+    }
+
+    .transaction-description {
+        width: auto;
+    }
+}
