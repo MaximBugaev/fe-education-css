@@ -21,25 +21,26 @@ body {
 }
 
 .wallets {
+    margin: 0;
     padding: 30px 20px;
+    border: none;
     background-color: #f2f2f2;
 }
 
-.wallets-title-header,
-.finance-header {
+.title-header {
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.wallets-title-header__title {
+.title-header__title {
     margin: 0;
     font-size: 1.12em;
     font-weight: 400;
 }
 
-.wallets-title-header__add-btn {
+.title-header__add-btn {
     border: 0;
     background: 0;
     width: 21px;
@@ -49,23 +50,21 @@ body {
     background-repeat: no-repeat;
 }
 
-.wallets-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.wallets-radio__item {
+    display: none;
 }
 
-.wallets-list__item {
+.wallets-radio__btn {
     background-color: var(--white-color);
     margin-bottom: 10px;
     border-radius: 4px;
 }
 
-.wallets-list__item:last-of-type {
+.wallets-radio__btn:last-of-type {
     margin-bottom: 0;
 }
 
-.wallets-list__btn {
+.wallets-radio__btn {
     width: 100%;
     height: 100%;
     padding: 9.5px 10px;
@@ -79,7 +78,7 @@ body {
     justify-content: space-between;
 }
 
-.wallets-list__btn:active {
+.wallets-radio__btn:active {
     outline: 2px solid #8793c6;
 }
 
@@ -112,18 +111,12 @@ body {
     margin-bottom: 20px;
 }
 
-.finance-header__title {
-    margin: 0;
-    font-size: 1.12em;
-    font-weight: 400;
-}
-
-.finance-header__balance {
+.title-header__balance {
     font-weight: 700;
     font-size: 1.12em;
 }
 
-.finance-header__balance--superscript,
+.title-header__balance--superscript,
 .transactions-list__change--superscript {
     vertical-align: baseline; 
     position: relative; 
@@ -175,6 +168,10 @@ body {
     margin: 0;
     margin-bottom: 5px;
 }
+
+/* input {
+    display: none;
+} */
 
 .transaction-description__description {
     font-size: 0.75em;
@@ -241,32 +238,32 @@ body {
         margin-bottom: 40px;
     }
 
-    .wallets-title-header__title {
+    .title-header__title {
         font-size: 1.25em;
     }
 
-    .wallets-title-header__add-btn {
+    .title-header__add-btn {
         width: 24px;
         height: 24px;
     }
 
-    .wallets-list__item {
+    .wallets-radio__btn {
         margin-bottom: 30px;
     }
 
-    .wallets-list__item:last-of-type {
+    .wallets-radio__btn:last-of-type {
         margin-bottom: 0;
     }
 
-    .wallets-list__btn {
+    .wallets-radio__btn {
         flex-direction: column-reverse;
     }
 
-    .wallets-list__btn--active {
+    .wallets-radio__btn--active {
         outline: 2px solid #8793c6;
     }
 
-    .wallets-list__btn:hover {
+    .wallets-radio__btn:hover {
         outline: 2px solid #8793c6;
         transition: 0.1s;
         cursor: pointer;
@@ -287,11 +284,7 @@ body {
         margin-bottom: 40px;
     }
 
-    .finance-header__title {
-        font-size: 1.25em;
-    }
-
-    .finance-header__balance {
+    .title-header__balance {
         font-size: 1.5em;
     }
 

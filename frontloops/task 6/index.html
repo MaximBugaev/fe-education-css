@@ -10,45 +10,45 @@
 </head>
 <body>
   <div class="page">
-    <div class="wallets">
-      <header class="wallets-title-header">
-        <h1 class="wallets-title-header__title">My Wallets</h1>
-        <button class="wallets-title-header__add-btn"></button>
+    <fieldset class="wallets">
+      <header class="wallets-title-header title-header">
+        <h1 class="title-header__title">My Wallets</h1>
+        <button class="title-header__add-btn"></button>
       </header>
-      <ul class="wallets-list">
-        <li class="wallets-list__item">
-          <button class="wallets-list__btn wallets-list__btn--active">
+      <form class="wallets-radio">
+        <input class="wallets-radio__item" type="radio" name="wallet">
+          <button class="wallets-radio__btn wallets-radio__btn--active">
             <div class="wallet-info">
               <span class="wallet-info__number">**** **** **** 2562</span>
               <span class="wallet-info__date">Valid thru: 12/17</span>
             </div>
             <img src="img/visa.svg" alt="visa" class="wallet-info__img">
           </button>
-        </li>
-        <li class="wallets-list__item">
-          <button class="wallets-list__btn">
+        </input>
+        <input class="wallets-radio__item" type="radio" name="wallet">
+          <button class="wallets-radio__btn">
             <div class="wallet-info">
               <span class="wallet-info__number">**** **** **** 2101</span>
               <span class="wallet-info__date">Valid thru: 07/19</span>
             </div>
             <img src="img/mastercard.svg" alt="mastercard" class="wallet-info__img">
           </button>
-        </li>
-        <li class="wallets-list__item">
-          <button class="wallets-list__btn">
+        </input>
+        <input class="wallets-radio__item" type="radio" name="wallet">
+          <button class="wallets-radio__btn">
             <div class="wallet-info">
               <span class="wallet-info__number">**** **** **** 8335</span>
               <span class="wallet-info__date">Valid thru: 09/17</span>
             </div>
             <img src="img/maestro.svg" alt="maestro" class="wallet-info__img">
           </button>
-        </li>
-      </ul>
-    </div>
+        </input>
+      </form>
+    </fieldset>
     <main class="finance">
-      <header class="finance-header">
-        <h1 class="finance-header__title">Current Balance</h1>
-        <span class="finance-header__balance">$729.<sup class="finance-header__balance--superscript">00</sup></span>
+      <header class="finance-header title-header">
+        <h1 class="title-header__title">Current Balance</h1>
+        <span class="title-header__balance">$729.<sup class="title-header__balance--superscript">00</sup></span>
       </header>
       <ul class="transactions-list">
         <li class="transactions-list__item">
@@ -57,57 +57,57 @@
           </div>
           <div class="transaction-description">
             <h2 class="transaction-description__title">Apple iPhone 7, 128 GB</h2>
-            <p class="transaction-description__description">Electronics #32343424 - 12 July 2015</p>
+            <p class="transaction-description__description">Electronics #32343424 - <time datetime="2015-07-12">12 July 2015</time></p>
           </div>
           <span class="transactions-list__change--loss">$650.<sup class="transactions-list__change--superscript">00</sup></span>
         </li>
         <li class="transactions-list__item">
           <div class="transaction-icon-container">
-            <img src="img/plus.svg"class="transaction-icon-container__payment-icon transaction-icon-container__payment-icon--plus">
+            <img src="img/plus.svg" class="transaction-icon-container__payment-icon transaction-icon-container__payment-icon--plus">
           </div>
           <div class="transaction-description">
             <h2 class="transaction-description__title">Funds Added</h2>
-            <p class="transaction-description__description">Payment #5435 - 11 July 2015</p>
+            <p class="transaction-description__description">Payment #5435 - <time datetime="2015-07-11">11 July 2015</time></p>
           </div>
           <span class="transactions-list__change--profit">$900.<sup class="transactions-list__change--superscript">00</sup></span>
         </li>
         <li class="transactions-list__item">
           <div class="transaction-icon-container">
-            <img src="img/minus.svg"class="transaction-icon-container__payment-icon transaction-icon-container__payment-icon--minus">
+            <img src="img/minus.svg" class="transaction-icon-container__payment-icon transaction-icon-container__payment-icon--minus">
           </div>
           <div class="transaction-description">
             <h2 class="transaction-description__title">Energy Bill</h2>
-            <p class="transaction-description__description">Other #745237423 - 11 July 2015</p>
+            <p class="transaction-description__description">Other #745237423 - <time datetime="2015-07-11">11 July 2015</time></p>
           </div>
           <span class="transactions-list__change--loss">$84.<sup class="transactions-list__change--superscript">90</sup></span>
         </li>
         <li class="transactions-list__item">
           <div class="transaction-icon-container">
-            <img src="img/minus.svg"class="transaction-icon-container__payment-icon transaction-icon-container__payment-icon--minus">
+            <img src="img/minus.svg" class="transaction-icon-container__payment-icon transaction-icon-container__payment-icon--minus">
           </div>
           <div class="transaction-description">
             <h2 class="transaction-description__title">The Eye Cinema Ticket</h2>
-            <p class="transaction-description__description">Entertainment #32343424 - 10 July 2015</p>
+            <p class="transaction-description__description">Entertainment #32343424 - <time datetime="2015-07-10">10 July 2015</time></p>
           </div>
           <span class="transactions-list__change--loss">$40.<sup class="transactions-list__change--superscript">00</sup></span>
         </li>
         <li class="transactions-list__item">
           <div class="transaction-icon-container">
-            <img src="img/minus.svg"class="transaction-icon-container__payment-icon transaction-icon-container__payment-icon--minus">
+            <img src="img/minus.svg" class="transaction-icon-container__payment-icon transaction-icon-container__payment-icon--minus">
           </div>
           <div class="transaction-description">
             <h2 class="transaction-description__title">McFood Restaurant</h2>
-            <p class="transaction-description__description">Cafes #32448 - 10 July 2015</p>
+            <p class="transaction-description__description">Cafes #32448 - <time datetime="2015-07-10">10 July 2015</time></p>
           </div>
           <span class="transactions-list__change--loss">$10.<sup class="transactions-list__change--superscript">50</sup></span>
         </li>
         <li class="transactions-list__item">
           <div class="transaction-icon-container">
-            <img src="img/minus.svg"class="transaction-icon-container__payment-icon transaction-icon-container__payment-icon--minus">
+            <img src="img/minus.svg" class="transaction-icon-container__payment-icon transaction-icon-container__payment-icon--minus">
           </div>
           <div class="transaction-description">
             <h2 class="transaction-description__title">Gas Station</h2>
-            <p class="transaction-description__description">Other #2138453 - 10 July 2015</p>
+            <p class="transaction-description__description">Other #2138453 - <time datetime="2015-07-10">10 July 2015</time></p>
           </div>
           <span class="transactions-list__change--loss">$30.<sup class="transactions-list__change--superscript">00</sup></span>
         </li>
