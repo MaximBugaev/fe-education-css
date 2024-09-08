@@ -10,41 +10,47 @@
 </head>
 <body>
   <div class="page">
-    <fieldset class="wallets">
+    <div class="wallets">
       <header class="wallets-title-header title-header">
         <h1 class="title-header__title">My Wallets</h1>
         <button class="title-header__add-btn"></button>
       </header>
-      <form class="wallets-radio">
-        <input class="wallets-radio__item" type="radio" name="wallet">
-          <button class="wallets-radio__btn wallets-radio__btn--active">
-            <div class="wallet-info">
-              <span class="wallet-info__number">**** **** **** 2562</span>
-              <span class="wallet-info__date">Valid thru: 12/17</span>
+      <form class="wallets-radio" action="#" method="post">
+        <label for="visa" class="wallets-radio__label">
+          <input class="wallets-radio__item" type="radio" name="wallet" value="visa" id="visa">
+            <div class="wallets-radio__btn wallets-radio__btn--active">
+              <div class="wallet-info">
+                <span class="wallet-info__number">**** **** **** 2562</span>
+                <span class="wallet-info__date">Valid thru: 12/17</span>
+              </div>
+              <img src="img/visa.svg" alt="visa" class="wallet-info__img">
             </div>
-            <img src="img/visa.svg" alt="visa" class="wallet-info__img">
-          </button>
-        </input>
-        <input class="wallets-radio__item" type="radio" name="wallet">
-          <button class="wallets-radio__btn">
-            <div class="wallet-info">
-              <span class="wallet-info__number">**** **** **** 2101</span>
-              <span class="wallet-info__date">Valid thru: 07/19</span>
+          </input>
+        </label>
+        <label for="mastercard" class="wallets-radio__label">
+          <input class="wallets-radio__item" type="radio" name="wallet" value="mastercard" id="mastercard">
+            <div class="wallets-radio__btn">
+              <div class="wallet-info">
+                <span class="wallet-info__number">**** **** **** 2101</span>
+                <span class="wallet-info__date">Valid thru: 07/19</span>
+              </div>
+              <img src="img/mastercard.svg" alt="mastercard" class="wallet-info__img">
             </div>
-            <img src="img/mastercard.svg" alt="mastercard" class="wallet-info__img">
-          </button>
-        </input>
-        <input class="wallets-radio__item" type="radio" name="wallet">
-          <button class="wallets-radio__btn">
-            <div class="wallet-info">
-              <span class="wallet-info__number">**** **** **** 8335</span>
-              <span class="wallet-info__date">Valid thru: 09/17</span>
+          </input>
+        </label>
+        <label for="maestro" class="wallets-radio__label">
+          <input class="wallets-radio__item" type="radio" name="wallet" value="maestro" id="maestro">
+            <div class="wallets-radio__btn">
+              <div class="wallet-info">
+                <span class="wallet-info__number">**** **** **** 8335</span>
+                <span class="wallet-info__date">Valid thru: 09/17</span>
+              </div>
+              <img src="img/maestro.svg" alt="maestro" class="wallet-info__img">
             </div>
-            <img src="img/maestro.svg" alt="maestro" class="wallet-info__img">
-          </button>
-        </input>
+          </input>
+        </label>
       </form>
-    </fieldset>
+    </div>
     <main class="finance">
       <header class="finance-header title-header">
         <h1 class="title-header__title">Current Balance</h1>

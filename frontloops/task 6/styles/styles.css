@@ -4,6 +4,8 @@
     --white-color: #ffffff;
     --dark-grey-color: #727272;
     --light-grey-color: #dedede;
+
+    --main-box-shadow: 0px 6px 20px 6px rgba(34, 60, 80, 0.26);
 }
 
 body {
@@ -50,25 +52,20 @@ body {
     background-repeat: no-repeat;
 }
 
-.wallets-radio__item {
-    display: none;
-}
-
-.wallets-radio__btn {
+.wallets-radio__label {
+    display: block;
     background-color: var(--white-color);
     margin-bottom: 10px;
     border-radius: 4px;
 }
 
-.wallets-radio__btn:last-of-type {
+.wallets-radio__label:last-of-type {
     margin-bottom: 0;
 }
 
 .wallets-radio__btn {
-    width: 100%;
     height: 100%;
-    padding: 9.5px 10px;
-    border: 0;
+    padding: 10px;
     outline: 1px solid var(--light-grey-color);
     border-radius: 4px;
     background-color: var(--white-color);
@@ -78,8 +75,9 @@ body {
     justify-content: space-between;
 }
 
-.wallets-radio__btn:active {
+.wallets-radio__item:checked ~ .wallets-radio__btn {
     outline: 2px solid #8793c6;
+    transition: 0.1s;
 }
 
 .wallet-info {
@@ -154,7 +152,6 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-right: -50%;
     transform: translate(-50%, -50%)
 }
 
@@ -191,15 +188,19 @@ body {
     font-size: 0.88em;
 }
 
+.wallets-radio__item {
+    display: none;
+}
+
 @media (min-width: 576px) {
     .page {
         display: flex;
         min-width: 300px;
         max-width: 820px;
         max-height: 450px;
-        -webkit-box-shadow: 0px 6px 20px 6px rgba(34, 60, 80, 0.26);
-        -moz-box-shadow: 0px 6px 20px 6px rgba(34, 60, 80, 0.26);
-        box-shadow: 0px 6px 20px 6px rgba(34, 60, 80, 0.26);
+        -webkit-box-shadow: var(--main-box-shadow);
+        -moz-box-shadow: var(--main-box-shadow);
+        box-shadow: var(--main-box-shadow);
     }
 
     .wallets {
@@ -247,7 +248,7 @@ body {
         height: 24px;
     }
 
-    .wallets-radio__btn {
+    .wallets-radio__label {
         margin-bottom: 30px;
     }
 
@@ -257,10 +258,6 @@ body {
 
     .wallets-radio__btn {
         flex-direction: column-reverse;
-    }
-
-    .wallets-radio__btn--active {
-        outline: 2px solid #8793c6;
     }
 
     .wallets-radio__btn:hover {
