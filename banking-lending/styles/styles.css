@@ -15,18 +15,18 @@ body {
     color: #000000;
 }
 
-.page {
+body {
     width: 1440px;
     height: 100vh;
     margin: 0 auto;
 }
 
-.page a {
+.link-block {
     text-decoration: none;
     color: inherit;
 }
 
-.page a:hover {
+.link-block:hover {
     cursor: pointer;
 }
 
@@ -223,7 +223,6 @@ input:focus-visible {
     font-weight: 700;
     font-size: 3.44em;
     line-height: 120%;
-    width: 420px;
     margin: 0;
 }
 
@@ -273,7 +272,7 @@ input:focus-visible {
 }
 
 .partner-companies {
-    padding: 75px 173px 75px 183px;
+    padding: 75px 0;
     background-color: #EFEFEF;
     margin-bottom: 75px;
 }
@@ -295,6 +294,10 @@ input:focus-visible {
     column-gap: 65px;
     row-gap: 10px;
     flex-wrap: wrap;
+}
+
+.partner-companies-list__logo  {
+    width: 335px;
 }
 
 .card-colors {
