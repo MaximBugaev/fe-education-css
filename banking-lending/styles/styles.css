@@ -15,18 +15,18 @@ body {
     color: #000000;
 }
 
-body {
+.page {
     width: 1440px;
     height: 100vh;
     margin: 0 auto;
 }
 
-.link-block {
+.page a {
     text-decoration: none;
     color: inherit;
 }
 
-.link-block:hover {
+.page a:hover {
     cursor: pointer;
 }
 
