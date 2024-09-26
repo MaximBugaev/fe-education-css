@@ -1,0 +1,429 @@
+:root {
+    --font-family: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.page {
+    width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.page a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.page a:hover {
+    cursor: pointer;
+}
+
+.header {
+    background-image: url(../imgs/header-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 150px 200px 165px;
+}
+
+.header__title {
+    margin: 0;
+    font-size: 3.75em;
+    font-weight: 400;
+    line-height: 100%;
+    width: 316px;
+    margin-bottom: 15px;
+}
+
+.header__description {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 150%;
+    width: 342px;
+    margin-bottom: 14px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 98px;
+}
+
+.nav-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-panel__link {
+    margin-right: 60px;
+}
+
+.nav-panel__link:last-of-type {
+    margin-right: 20px;
+}
+
+.get-app-form {
+    display: flex;
+}
+
+.get-app-form__input::placeholder {
+    font-size: 1rem;
+}
+
+.get-app-form__input {
+    border: none;
+    width: 230px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50px 0 0 50px;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.get-app-form__btn {
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 0 50px 50px 0;
+    padding: 18px 20px;
+}
+
+.get-app-form__btn:hover {
+    cursor: pointer;
+}
+
+.get-app-form__btn-caption {
+    font-size: 1rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus-visible { 
+    outline: none;
+}
+
+.header__caption {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.app-download-links {
+    display: flex;
+    gap: 25px;
+}
+
+.advantages {
+    background-color: #EFEFEF;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.advantages-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    width: 1170px;
+    margin: 0 auto;
+    font-size: 0.75em;
+    line-height: 150%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages-list__title {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+}
+
+.advantages-list__item {
+    position: relative;
+}
+
+.advantages-list__item::before,
+.advantages-list__item::after {
+    content: '';
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    top: -3px;
+    background-image: url(../imgs/leaves.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.advantages-list__item::before {
+    left: -52px;
+}
+
+.advantages-list__item::after {
+    right: -52px;
+    transform: scaleX(-1)
+}
+
+.main__title {
+    text-align: center;
+    margin: 0;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.card-colors,
+.sections-footer {
+    padding: 0 150px;
+}
+
+.card-bonuses {
+    padding: 79px 170px 100px;
+}
+
+.card-bonuses__title {
+    margin-bottom: 30px;
+}
+
+.bonuses-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.bonuses-container__item {
+    padding: 40px 40px 57px;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bonuses-container__title {
+    font-weight: 700;
+    font-size: 3.44em;
+    line-height: 120%;
+    margin: 0;
+}
+
+.bonuses-container__item--get-cash-background {
+    grid-column: span 2;
+    background-image: url(../imgs/get-cash-background.jpg);
+}
+
+.bonuses-container__item--get-cash-background .bonuses-container__title {
+    width: 500px;
+}
+
+.bonuses-container__item--paycheck-background {
+    background-image: url(../imgs/paycheck-backgroundjpg.jpg);
+}
+
+.bonuses-container__item--paycheck-background .bonuses-container__title {
+    width: 410px;
+}
+
+.bonuses-container__item--cashback-background {
+    background-image: url(../imgs/cashback-background.jpg);
+}
+
+.bonuses-container__item--atms-background {
+    background-image: url(../imgs/atms-backgroundjpg.jpg);
+}
+
+.bonuses-container__item--support-background {
+    background-image: url(../imgs/count-background.jpg);
+}
+
+.bonuses-container__btn {
+    display: block;
+    background-color: #000000;
+    padding: 25px 0;
+    border-radius: 50px;
+    width: 175px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.bonuses-container__btn-caption {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.partner-companies {
+    padding: 75px 0;
+    background-color: #EFEFEF;
+    margin-bottom: 75px;
+}
+
+.partner-companies__title {
+    margin-bottom: 25px;
+}
+
+.partner-companies-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    margin: 0 auto;
+    width: 1140px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    column-gap: 65px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.partner-companies-list__logo  {
+    width: 335px;
+}
+
+.card-colors {
+    margin-bottom: 80px;
+}
+
+.card-colors__title {
+    margin-bottom: 57px;
+}
+
+.card-colors__title--large {
+    display: block;
+    font-size: 3.44rem;
+    line-height: 120%;
+    text-transform: none;
+}
+
+.card-colors-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card-colors-container__link {
+    display: block;
+    width: 530px;
+    height: 700px;
+    padding: 36px 0 0 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.card-colors-container__link--black-background {
+    background-image: url(../imgs/black-color-background.jpg);
+    color: #000000;
+}
+
+.card-colors-container__link--peach-background {
+    background-image: url(../imgs/peach-color-background.jpg);
+}   
+
+.card-colors-container__title {
+    font-size: 3.44rem;
+    margin: 0;
+}
+
+.card-colors-container__link--peach-background .card-colors-container__title {
+    color: #ffffff;
+}
+
+.sections-footer {
+    background-color: #FCD0BA;
+    padding: 82px 0;
+}
+
+.sections-footer__title {
+    font-size: 5.62rem;
+    line-height: 120%;
+    text-transform: none;
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.get-app-form--align-center {
+    display: flex;
+    justify-content: center;
+}
+
+.main-footer {
+    background-color: #000000;
+    color: #B3B3B3;
+    padding: 0 150px 80px 165px;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #4D4D4D;
+    padding: 35px 0;
+    margin-bottom: 40px;
+}
+
+.footer-content-logo {
+    display: block;
+    margin-bottom: 21px;
+}
+
+.footer-copyright,
+.footer-additional__caption {
+    font-size: 0.75rem;
+    line-height: 150%;
+}
+
+.footer-copyright {
+    width: 254px;
+}
+
+.footer-links-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    width: 855px;
+    height: 112px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.footer-links-list__item {
+    width: 280px;
+    box-sizing: border-box;
+    padding: 0 80px;
+    margin-top: 20px;
+}
+
+.footer-additional__caption {
+    width: 97%;
+}
+
+.footer-additional__caption:not(:last-of-type) {
+    margin-bottom: 16px;
+}
