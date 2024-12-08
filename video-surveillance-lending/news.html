@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/news.css">
+    <title>Easy cam News</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav">
+            <div class="menu-overlay">
+                <div class="main-menu main-menu--open">
+                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="main-menu__cross" onclick="closeMenu()">
+                        <path d="M1.93317 0C2.10996 0 2.27932 0.0711172 2.4031 0.197336L5.7628 3.62304C6.15553 4.02349 6.80074 4.02267 7.19246 3.62124L10.5289 0.202022C10.655 0.0728415 10.8278 0 11.0083 0C11.6004 0 11.9013 0.711723 11.4889 1.13644L8.14061 4.58459C7.76432 4.97211 7.76377 5.58842 8.13938 5.9766L11.8979 9.861C12.3104 10.2873 12.0083 11 11.4151 11C11.2351 11 11.0625 10.9277 10.9363 10.7994L7.19127 6.99419C6.7995 6.59611 6.1576 6.59611 5.76582 6.99419L2.0158 10.8045C1.89274 10.9296 1.72463 11 1.54919 11C0.97042 11 0.676328 10.3041 1.0797 9.88904L4.83916 6.0207C5.21501 5.63397 5.21651 5.01887 4.84254 4.63031L1.45892 1.11465C1.05648 0.6965 1.35282 0 1.93317 0Z" fill="#333333" />
+                    </svg>
+                    <ul class="menu-list">
+                        <li class="menu-list__item">
+                            <a href="solutions.html" class="nav-list__link">Готовые решения</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="index.html#tariffs" class="nav-list__link">Тарифы</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="news.html" class="nav-list__link">Новости</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#contacts" class="nav-list__link">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="contacts-container">
+                        <a href="tel: +74732573191" class="contacts-container__tel-num">+7 (473) 257-31-91</a>
+                        <img src="imgs/phone-icon.png" alt="иконка смартфона">                        
+                    </div>
+                </div>
+            </div>
+            <a href="index.html#" class="main-logo">
+                <img src="imgs/easycam-logo.svg" alt="easy cam логотип" class="main-logo__img">
+            </a>
+            <ul class="nav-list">
+                <li class="nav-list__item">
+                    <a href="solutions.html" class="nav-list__link">Готовые решения</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="index.html#tariffs" class="nav-list__link">Тарифы</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="news.html" class="nav-list__link nav-list__link--active">Новости</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#contacts" class="nav-list__link">Контакты</a>
+                </li>
+            </ul>
+            <button class="nav-burger" onclick="openMenu()">
+                <span class="nav-burger__btn"></span>
+            </button>
+            <a href="#" class="login-btn">Войти</a>
+            <a href="#" class="login-icon">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" class="login-icon__img">
+                    <path d="M11.4981 0C14.7838 0 17.4697 2.68593 17.4697 5.97166C17.4697 9.2574 14.7838 11.9433 11.4981 11.9433C8.21233 11.9433 5.52641 9.2574 5.52641 5.97166C5.52641 2.68593 8.21233 0 11.4981 0Z" fill="#333333" />
+                    <path d="M1.25016 16.7153C1.40664 16.3241 1.61522 15.959 1.84992 15.62C3.04948 13.8468 4.90091 12.6733 6.98708 12.3865C7.24783 12.3604 7.53468 12.4125 7.74332 12.569C8.83856 13.3774 10.1424 13.7946 11.4984 13.7946C12.8545 13.7946 14.1583 13.3774 15.2536 12.569C15.4622 12.4125 15.749 12.3343 16.0098 12.3865C18.096 12.6733 19.9735 13.8468 21.147 15.62C21.3816 15.959 21.5903 16.3502 21.7467 16.7153C21.8249 16.8718 21.7989 17.0543 21.7207 17.2108C21.512 17.5758 21.2513 17.9409 21.0166 18.2538C20.6515 18.7493 20.2603 19.1926 19.817 19.6098C19.452 19.9749 19.0347 20.3139 18.6175 20.6529C16.5574 22.1915 14.08 22.9998 11.5245 22.9998C8.96894 22.9998 6.4916 22.1914 4.43153 20.6529C4.0143 20.34 3.59708 19.9749 3.23196 19.6098C2.81474 19.1926 2.39751 18.7493 2.0324 18.2538C1.77165 17.9148 1.53691 17.5758 1.32833 17.2108C1.198 17.0543 1.17195 16.8717 1.25016 16.7153Z" fill="#333333" />
+                </svg>
+            </a>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="news">
+            <h1 class="news__title">Новости компании</h1>
+            <ul class="news-list">
+                <li class="news-list__item">
+                    <div class="news-title-container">
+                        <h2 class="news-list__title">Запуск мобильного приложения</h2>
+                        <div class="news-img-container">
+                            <a href="#" class="apps-wrapper">
+                                <img class="news-list__img" src="imgs/iPhone 11.png" alt="">                           
+                                <img src="imgs/google-play-badge.svg" alt="гугл плэй" class="apps-container__img">
+                            </a> 
+                            <a href="#" class="apps-wrapper">
+                                <img class="news-list__img" src="imgs/iPhone 11.png" alt="">
+                                <img src="imgs/App_Store_Badge.svg" alt="эп стор" class="apps-container__img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-img-container--adaptive">
+                        <a href="#" class="apps-wrapper--adaptive">
+                            <img class="news-list__img news-list__img--adaptive" src="imgs/iPhone 11.png" alt="">                           
+                            <img src="imgs/google-play-badge.svg" alt="гугл плэй" class="apps-container__img apps-container__img--active">
+                        </a> 
+                        <a href="#" class="apps-wrapper--adaptive">
+                            <img class="news-list__img news-list__img--adaptive" src="imgs/iPhone 11.png" alt="">
+                            <img src="imgs/App_Store_Badge.svg" alt="эп стор" class="apps-container__img apps-container__img--active">
+                        </a>
+                    </div>
+                    <div class="news-list-container">
+                        <time datetime="2020-02-07" class="news-list__tooltip tooltip">07.02.20</time>
+                        <p class="news-list__description">С сегоднешнего наш сервис стал еще удобнее благодаря приложениям для iOS и Android.<br>Приложение актуально для действующих, зарегистрированых клиентов. Для подключение ваших камер, оставите заявку. <br>
+                            Так же вы можете воспользоватся демо кабинетом, для оценки сервиса и приложений. Для этого просто свяжитесь с нами. <br>
+                            Фунционал приложения:  1. Воспроизведение назад в режиме архива. 2. Быстрая перемотка в +/- 10 сек. по двойному нажатию по экрану...</p>
+                    </div>
+                </li>
+                <li class="news-list__item">
+                    <div class="news-title-container">
+                        <h2 class="news-list__title">Подключение под ключ в Воронеже</h2>
+                        <div class="news-img-container">
+                            <a href="#" class="apps-wrapper">
+                                <img class="news-list__img" src="imgs/iPhone 11.png" alt="">                           
+                                <img src="imgs/google-play-badge.svg" alt="гугл плэй" class="apps-container__img">
+                            </a> 
+                            <a href="#" class="apps-wrapper">
+                                <img class="news-list__img" src="imgs/iPhone 11.png" alt="">
+                                <img src="imgs/App_Store_Badge.svg" alt="эп стор" class="apps-container__img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-img-container--adaptive">
+                        <a href="#" class="apps-wrapper--adaptive">
+                            <img class="news-list__img news-list__img--adaptive" src="imgs/iPhone 11.png" alt="">                           
+                            <img src="imgs/google-play-badge.svg" alt="гугл плэй" class="apps-container__img apps-container__img--active">
+                        </a> 
+                        <a href="#" class="apps-wrapper--adaptive">
+                            <img class="news-list__img news-list__img--adaptive" src="imgs/iPhone 11.png" alt="">
+                            <img src="imgs/App_Store_Badge.svg" alt="эп стор" class="apps-container__img apps-container__img--active">
+                        </a>
+                    </div>
+                    <div class="news-list-container">
+                        <time datetime="2020-02-07" class="news-list__tooltip tooltip">07.02.20</time>
+                        <p class="news-list__description">С сегоднешнего наш сервис стал еще удобнее благодаря приложениям для iOS и Android.<br>Приложение актуально для действующих, зарегистрированых клиентов. Для подключение ваших камер, оставите заявку. <br>
+                            Так же вы можете воспользоватся демо кабинетом, для оценки сервиса и приложений. Для этого просто свяжитесь с нами. <br>
+                            Фунционал приложения:  1. Воспроизведение назад в режиме архива. 2. Быстрая перемотка в +/- 10 сек. по двойному нажатию по экрану...</p>
+                    </div>
+                </li>
+                <li class="news-list__item">
+                    <div class="news-title-container">
+                        <h2 class="news-list__title">Мартовская акция</h2>
+                        <div class="news-img-container">
+                            <a href="#" class="apps-wrapper">
+                                <img class="news-list__img" src="imgs/iPhone 11.png" alt="">                           
+                                <img src="imgs/google-play-badge.svg" alt="гугл плэй" class="apps-container__img">
+                            </a> 
+                            <a href="#" class="apps-wrapper">
+                                <img class="news-list__img" src="imgs/iPhone 11.png" alt="">
+                                <img src="imgs/App_Store_Badge.svg" alt="эп стор" class="apps-container__img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-img-container--adaptive">
+                        <a href="#" class="apps-wrapper--adaptive">
+                            <img class="news-list__img news-list__img--adaptive" src="imgs/iPhone 11.png" alt="">                           
+                            <img src="imgs/google-play-badge.svg" alt="гугл плэй" class="apps-container__img apps-container__img--active">
+                        </a> 
+                        <a href="#" class="apps-wrapper--adaptive">
+                            <img class="news-list__img news-list__img--adaptive" src="imgs/iPhone 11.png" alt="">
+                            <img src="imgs/App_Store_Badge.svg" alt="эп стор" class="apps-container__img apps-container__img--active">
+                        </a>
+                    </div>
+                    <div class="news-list-container">
+                        <time datetime="2020-02-07" class="news-list__tooltip tooltip">07.02.20</time>
+                        <p class="news-list__description">С сегоднешнего наш сервис стал еще удобнее благодаря приложениям для iOS и Android.<br>Приложение актуально для действующих, зарегистрированых клиентов. Для подключение ваших камер, оставите заявку. <br>
+                            Так же вы можете воспользоватся демо кабинетом, для оценки сервиса и приложений. Для этого просто свяжитесь с нами. <br>
+                            Фунционал приложения:  1. Воспроизведение назад в режиме архива. 2. Быстрая перемотка в +/- 10 сек. по двойному нажатию по экрану...</p>
+                    </div>
+                </li>
+                <li class="news-list__item">
+                    <div class="news-title-container">
+                        <h2 class="news-list__title">Подключение в регионах России</h2>
+                        <div class="news-img-container">
+                            <a href="#" class="apps-wrapper">
+                                <img class="news-list__img" src="imgs/iPhone 11.png" alt="">                           
+                                <img src="imgs/google-play-badge.svg" alt="гугл плэй" class="apps-container__img">
+                            </a> 
+                            <a href="#" class="apps-wrapper">
+                                <img class="news-list__img" src="imgs/iPhone 11.png" alt="">
+                                <img src="imgs/App_Store_Badge.svg" alt="эп стор" class="apps-container__img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-img-container--adaptive">
+                        <a href="#" class="apps-wrapper--adaptive">
+                            <img class="news-list__img news-list__img--adaptive" src="imgs/iPhone 11.png" alt="">                           
+                            <img src="imgs/google-play-badge.svg" alt="гугл плэй" class="apps-container__img apps-container__img--active">
+                        </a> 
+                        <a href="#" class="apps-wrapper--adaptive">
+                            <img class="news-list__img news-list__img--adaptive" src="imgs/iPhone 11.png" alt="">
+                            <img src="imgs/App_Store_Badge.svg" alt="эп стор" class="apps-container__img apps-container__img--active">
+                        </a>
+                    </div>
+                    <div class="news-list-container">
+                        <time datetime="2020-02-07" class="news-list__tooltip tooltip">07.02.20</time>
+                        <p class="news-list__description">С сегоднешнего наш сервис стал еще удобнее благодаря приложениям для iOS и Android.<br>Приложение актуально для действующих, зарегистрированых клиентов. Для подключение ваших камер, оставите заявку. <br>
+                            Так же вы можете воспользоватся демо кабинетом, для оценки сервиса и приложений. Для этого просто свяжитесь с нами. <br>
+                            Фунционал приложения:  1. Воспроизведение назад в режиме архива. 2. Быстрая перемотка в +/- 10 сек. по двойному нажатию по экрану...</p>
+                    </div>
+                </li>
+                <li class="news-list__item">
+                    <div class="news-title-container">
+                        <h2 class="news-list__title">Подключение под ключ в Воронеже</h2>
+                        <div class="news-img-container">
+                            <a href="#" class="apps-wrapper">
+                                <img class="news-list__img" src="imgs/iPhone 11.png" alt="">                           
+                                <img src="imgs/google-play-badge.svg" alt="гугл плэй" class="apps-container__img">
+                            </a> 
+                            <a href="#" class="apps-wrapper">
+                                <img class="news-list__img" src="imgs/iPhone 11.png" alt="">
+                                <img src="imgs/App_Store_Badge.svg" alt="эп стор" class="apps-container__img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-img-container--adaptive">
+                        <a href="#" class="apps-wrapper--adaptive">
+                            <img class="news-list__img news-list__img--adaptive" src="imgs/iPhone 11.png" alt="">                           
+                            <img src="imgs/google-play-badge.svg" alt="гугл плэй" class="apps-container__img apps-container__img--active">
+                        </a> 
+                        <a href="#" class="apps-wrapper--adaptive">
+                            <img class="news-list__img news-list__img--adaptive" src="imgs/iPhone 11.png" alt="">
+                            <img src="imgs/App_Store_Badge.svg" alt="эп стор" class="apps-container__img apps-container__img--active">
+                        </a>
+                    </div>
+                    <div class="news-list-container">
+                        <time datetime="2020-02-07" class="news-list__tooltip tooltip">07.02.20</time>
+                        <p class="news-list__description">С сегоднешнего наш сервис стал еще удобнее благодаря приложениям для iOS и Android.<br>Приложение актуально для действующих, зарегистрированых клиентов. Для подключение ваших камер, оставите заявку. <br>
+                            Так же вы можете воспользоватся демо кабинетом, для оценки сервиса и приложений. Для этого просто свяжитесь с нами. <br>
+                            Фунционал приложения:  1. Воспроизведение назад в режиме архива. 2. Быстрая перемотка в +/- 10 сек. по двойному нажатию по экрану...</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="change-control">
+                <button class="btns-container-btn-prev change-button"></button>
+                <span class="swiper-categories-counter"><span class="swiper-categories-counter--active">1</span><span class="swiper-categories-counter--slash">/</span>3</span>
+                <button class="btns-container-btn-next change-button change-button--active"></button>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="main-footer-container">
+            <div class="useful-links">
+                <h2 class="useful-links__title footer-title">Полезные ссылки</h2>
+                <div class="useful-links-container">
+                    <a href="index.html" class="useful-links-containter__link">На главную</a>
+                    <a href="index.html#services" class="useful-links-containter__link">Наши услуги</a>
+                    <a href="index.html#tariffs" class="useful-links-containter__link">Тарифы</a>
+                    <a href="solutions.html" class="useful-links-containter__link">Готовые решения</a>
+                    <a href="news.html" class="useful-links-containter__link">Новости компании</a>
+                    <a href="#" class="useful-links-containter__link">Личный кабинет</a>                
+                </div>
+            </div>
+            <div class="contacts" id="contacts">
+                <h2 class="contacts__title footer-title">Контакты</h2>
+                <a href="tel: +74732573191" class="contacts__tel-num">+7 (473) 257-31-91</a>
+                <a href="#" download class="contacts__download-link">Скачать реквизиты</a>
+                <div class="apps-container footer-apps-container">
+                    <a href="#" class="apps-container__link footer-apps-container__link">
+                        <img src="imgs/google-play-badge.svg" alt="гугл плэй" class="apps-container__app-img footer-apps-container__app-img">
+                    </a>
+                    <a href="#" class="apps-container__link footer-apps-container__link">
+                        <img src="imgs/App_Store_Badge.svg" alt="эп стор" class="apps-container__app-img footer-apps-container__app-img">
+                    </a>
+                </div>
+                <div class="copyright">
+                    <span class="copyright__caption">Copyright  ©  2013 - 2020 EASYCAM - облачное видеонаблюдение</span>
+                </div>
+            </div>
+            <div class="connection-request">
+                <h2 class="connection-request__title footer-title">Оставьте заявку на подключение</h2>
+                <form action="post" class="request-form">
+                    <input type="tel" class="request-form__tel-input request-form__input" placeholder="Ваш телефон">
+                    <input type="text" class="request-form__name-input request-form__input" placeholder="Ваше имя">
+                    <button class="request-form__btn">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/news.js"></script>
+</body>
+</html>
