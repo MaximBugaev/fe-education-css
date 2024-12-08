@@ -126,12 +126,14 @@
     padding: 0 25px;
 }
 
-.services__title { 
+.main__title {
     font-family: var(--second-family);
-    font-weight: 700;
     font-size: 1.5rem;
-    line-height: 110%;
     color: var(--dark-grey-color);
+}
+
+.services__title { 
+    line-height: 110%;
     margin-bottom: 30px;
 }
 
@@ -199,10 +201,7 @@
 }
 
 .download-app__title {
-    font-family: var(--second-family);
-    font-size: 1.5rem;
     line-height: 110%;
-    color: var(--dark-grey-color);
     margin-bottom: 20px;
     width: 90%;
 }
@@ -252,7 +251,7 @@
 }
 
 .tariffs__title {
-    font-size: 1.5rem;
+    color: var(--second-color);
     line-height: 110%;
     margin-bottom: 21px;
 }
@@ -316,9 +315,6 @@
 }
 
 .solutions__title {
-    font-family: var(--second-family);
-    font-size: 1.5em;
-    color: var(--dark-grey-color);
     margin-bottom: 16px;
     width: 80%;
 }
@@ -380,9 +376,6 @@
 }
 
 .news__title {
-    font-family: var(--second-family);
-    font-size: 1.5rem;
-    color: var(--dark-grey-color);
     margin-bottom: 16px;
 }
 
@@ -437,8 +430,8 @@
 .news-list__title {
     font-family: var(--second-family);
     font-size: 1.25rem;
-    line-height: 120%;
     color: var(--dark-grey-color);
+    line-height: 120%;
     opacity: 0.9;
     width: 75%;
     margin-bottom: 9px;
@@ -530,13 +523,16 @@
         font-size: 1em;
     }
 
+    .main__title {
+        font-size: 1.75rem;
+    }
+
     .services {
         margin-bottom: 60px;
     }
 
     .services__title {
         width: 261px;
-        font-size: 1.75rem;
         margin-bottom: 40px;
     }
 
@@ -608,7 +604,6 @@
     }
 
     .download-app__title {
-        font-size: 1.75em;
         width: 55%;
         margin-bottom: 30px;
     }
@@ -633,7 +628,6 @@
     }
 
     .tariffs__title {
-        font-size: 1.75em;
         margin-bottom: 40px;
     }
 
@@ -674,7 +668,6 @@
 
     .solutions__title {
         width: 289px;
-        font-size: 1.75em;
         margin-bottom: 40px;
     }
 
@@ -721,7 +714,6 @@
     }
 
     .news__title {
-        font-size: 1.75em;
         margin-bottom: 40px;
     }
     
@@ -809,19 +801,19 @@
         position: absolute;
     }
 
+    .main__title {
+        font-size: 3rem;
+    }
+
     .services {
         padding: 0;
         margin-bottom: 120px;
-    }
-
-    .services-container {
         max-width: 1200px;
         margin: 0 auto;
     }
 
     .services__title {
         width: 442px;
-        font-size: 3rem;
     }
 
     .services-addition {
@@ -870,16 +862,13 @@
     .download-app {
         padding: 70px 0 148px;
         background-position: bottom right;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     .download-app__title {
-        font-size: 3em;
+        width: 687px;
         margin-bottom: 50px;
-    }
-
-    .download-app-container {
-        max-width: 1200px;
-        margin: 0 auto;
     }
 
     .dignities-list {
@@ -902,7 +891,6 @@
     }
 
     .tariffs__title {
-        font-size: 3em;
         margin-bottom: 50px;
     }
 
@@ -945,16 +933,12 @@
     .solutions {
         padding: 0;
         margin-bottom: 90px;
-    }
-    
-    .solutions-container {
         max-width: 1200px;
         margin: 0 auto;
     }
 
     .solutions__title {
         width: 432px;
-        font-size: 3em;
         margin-bottom: 50px;
     }
 
@@ -998,15 +982,11 @@
     .news {
         padding: 70px 0;
         margin-bottom: 50px;
-    }
-
-    .news-container {
         max-width: 1200px;
         margin: 0 auto;
     }
 
     .news__title {
-        font-size: 3em;
         margin-bottom: 50px;
     }
 
